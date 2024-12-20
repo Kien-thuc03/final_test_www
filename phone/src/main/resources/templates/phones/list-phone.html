@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Danh sach dien thoai</h1>
+    <a href="/phones/add">Thêm mới điện thoại</a>
+    <table style="border: black">
+        <tr>
+            <th>Mã điện thoại</th>
+            <th>Tên điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Giá vốn</th>
+            <th>Loại</th>
+            <th>Nhà cung cấp</th>
+            <th>Thao tác</th>
+        </tr>
+        <tr th:each="phone : ${phones}">
+            <td th:text="${phone.maDienThoai}"></td>
+            <td th:text="${phone.tenDienThoai}"></td>
+            <td th:text="${phone.diaChi}"></td>
+            <td th:text="${phone.giaVon}"></td>
+            <td th:text="${phone.loai}"></td>
+            <td th:text="${phone.nhaCungCap}"></td>
+            <td>
+                <a th:href="@{'/phones/edit/' + ${phone.maDienThoai}}">Sửa</a>
+                <a th:href="@{'/phones/delete/' + ${phone.maDienThoai}}">Xóa</a>
+            </td>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Phone</title>
+</head>
+<body>
+    <h1>Edit Phone</h1>
+    <form th:action="@{/phones/edit/{maDienThoai}(maDienThoai=${phone.maDienThoai})}" th:object="${phone}" method="post">
+        <input type="hidden" th:field="*{maDienThoai}" />
+        <div>
+            <label for="tenDienThoai">Ten Dien Thoai:</label>
+            <input type="text" id="tenDienThoai" th:field="*{tenDienThoai}" />
+        </div>
+        <div>
+            <label for="diaChi">Dia Chi:</label>
+            <input type="text" id="diaChi" th:field="*{diaChi}" />
+        </div>
+        <div>
+            <label for="giaVon">Gia Von:</label>
+            <input type="text" id="giaVon" th:field="*{giaVon}" />
+        </div>
+        <div>
+            <label for="loai">Loai:</label>
+            <input type="text" id="loai" th:field="*{loai}" />
+        </div>
+        <div>
+            <label for="nhaCungCap">Nha Cung Cap:</label>
+            <input type="text" id="nhaCungCap" th:field="*{nhaCungCap}" />
+        </div>
+        <div>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+</body>
+</html>
