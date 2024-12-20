@@ -25,8 +25,14 @@ public class PhoneServices {
         return phone;
     }
 
-    public Phone update(Phone phone) {
-        return phoneRepositories.save(phone);
+    public Phone update(Long id, Phone phone) {
+        Phone existingPhone = phoneRepositories.findById(id).orElseThrow(() -> new RuntimeException("Phone not found"));
+        existingPhone.setTenDienThoai(phone.getTenDienThoai());
+        existingPhone.setDiaChi(phone.getDiaChi());
+        existingPhone.setGiaVon(phone.getGiaVon());
+        existingPhone.setLoai(phone.getLoai());
+        existingPhone.setNhaCungCap(phone.getNhaCungCap());
+        return phoneRepositories.save(existingPhone);
     }
 
 

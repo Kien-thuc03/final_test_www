@@ -39,7 +39,7 @@ public class PhoneController {
     @RequestMapping(value = "phones/edit/{maDienThoai}", method = RequestMethod.POST)
     public String updatePhone(@PathVariable("maDienThoai") Long maDienThoai, Phone phone) {
         phone.setMaDienThoai(maDienThoai);
-        phoneServices.save(phone);
+        phoneServices.update(maDienThoai, phone);
         return "redirect:/phones";
     }
 
