@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh Sach</title>
+</head>
+<body>
+<div style="text-align: center;">
+    <h1>Danh sach don hang</h1>
+    <div>
+        <a href="/don-hang/them-don-hang">Them don hang</a>
+    </div>
+    <br>
+    <form method="get" action="/don-hang">
+        <input type="search" name="keyword" placeholder="Tìm kiếm theo Mã đơn hàng hoặc Tên cửa hàng" aria-label="Search">
+        <button type="submit">Tìm kiếm</button>
+    </form>
+    <table border="1" style="margin: 0 auto;">
+        <tr>
+            <th>Id</th>
+            <th>Ma don hang</th>
+            <th>Ten khach hang</th>
+            <th>Email</th>
+            <th>Ngay dat hang</th>
+            <th>Ten san pham</th>
+            <th>Trang thai</th>
+            <th>Ma cua hang</th>
+            <th>Thao tac</th>
+        </tr>
+        <tr th:each="donHang : ${donHangs}">
+            <td th:text="${donHang.id}"></td>
+            <td th:text="${donHang.maDonHang}"></td>
+            <td th:text="${donHang.tenKhachHang}"></td>
+            <td th:text="${donHang.email}"></td>
+            <td th:text="${donHang.ngayDatHang}"></td>
+            <td th:text="${donHang.tenSp}"></td>
+            <td th:text="${donHang.trangThai.getValue()}"></td>
+            <td th:text="${donHang.maCuaHang.id}"></td>
+            <td>
+                <a th:href="@{'/xoa-don-hang/' + ${donHang.maDonHang}}" th:if="${donHang.trangThai.value} == 0">Xoa</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

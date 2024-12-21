@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b54fb45-abbf-444f-8c2b-607915577a66" name="Changes" comment="" />
+    <list default="true" id="1b54fb45-abbf-444f-8c2b-607915577a66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/configs/PasswordEndcoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/entities/CuaHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/entities/DonHang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/enums/TrangThai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/repositories/CuaHangRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/repositories/DonHangRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/services/CuaHangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/services/DonHangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/services/Impl/CuaHangServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/backend/services/Impl/DonHangServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/java/edu/iuh/fit/cuahangsercurity/fontend/controllers/DonHangController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/resources/static/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/resources/templates/don-hang/ds-don-hang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CuaHangSercurity/src/main/resources/templates/don-hang/them-don-hang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +108,7 @@
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Spring Boot.CkApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
@@ -130,8 +150,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -158,6 +178,7 @@
       <workItem from="1734595708000" duration="889000" />
       <workItem from="1734597442310" duration="282000" />
       <workItem from="1734640852279" duration="36000" />
+      <workItem from="1734729189231" duration="9986000" />
     </task>
     <servers />
   </component>

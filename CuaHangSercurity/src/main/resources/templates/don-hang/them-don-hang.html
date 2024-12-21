@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h1>Thêm mới đơn hàng</h1>
+    <form action="/don-hang/them-don-hang" method="post">
+        <div th:if="${error}" style="color: red;">
+            <p th:text="${error}"></p>
+        </div>
+        <div>
+            <label for="maDonHang" class="form-label">Mã đơn hàng</label>
+            <input type="text" class="form-control" id="maDonHang" name="maDonHang" required disabled>
+        </div>
+        <div>
+            <label for="maCuaHang" class="form-label">Mã cửa hàng</label>
+            <select class="form-select" id="maCuaHang" name="maCuaHang" required>
+                <option value="">Chọn cửa hàng</option>
+                <option th:each="cuaHang : ${cuaHangs}" th:value="${cuaHang.getId()}" th:text="${cuaHang.ten}"></option>
+            </select>
+        </div>
+        <div>
+            <label for="tenKhachHang" class="form-label ">Tên khách hàng</label>
+            <input type="text" class="form-control" id="tenKhachHang" name="tenKhachHang" required>
+        </div>
+        <div >
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="ngayDatHang" class="form-label">Ngày đặt hàng</label>
+            <input type="date" class="form-control" id="ngayDatHang" name="ngayDatHang" required>
+        </div>
+        <div>
+            <label for="tenSp" class="form-label">Tên sản phẩm</label>
+            <input type="text" class="form-control" id="tenSp" name="tenSp" required>
+        </div>
+        <div>
+            <label class="form-label">Trạng thái</label>
+            <div class="form-check">
+                <input type="radio" id="chuaChapNhan" name="trangThai" value="CHUA_CHAP_NHAN">
+                <label for="chuaChapNhan">Chưa chấp nhận</label>
+                <input type="radio" id="chapNhan" name="trangThai" value="CHAP_NHAN" checked>
+                <label for="chapNhan">Chấp nhận</label>
+            </div>
+        </div>
+        <button type="submit">Thêm mới</button>
+    </form>
+</div>
+
+</body>
+</html>
